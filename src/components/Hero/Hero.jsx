@@ -1,6 +1,7 @@
 import './Hero.css';
 import { CiPause1, CiPlay1 } from "react-icons/ci";
 import { IoIosArrowForward } from "react-icons/io";
+import 'animate.css';
 
 const Hero = ({ heroData, setHeroCount, heroCount, setPlayStatus, playStatus }) => {
    
@@ -10,7 +11,7 @@ const Hero = ({ heroData, setHeroCount, heroCount, setPlayStatus, playStatus }) 
     return (
 <div className=''>
 <div className='mr-10 mt-44 ml-10 lg:mr-28 lg:mt-64 lg:ml-20'>
-    <div className='hrtext1'>
+    <div className='hrtext1 animate__animated animate__bounce'>
         {/* <p>{heroData[heroCount]?.text1}</p>
         <p>{heroData[heroCount]?.text2}</p> */}
         <p>{heroData?.text1}</p>
