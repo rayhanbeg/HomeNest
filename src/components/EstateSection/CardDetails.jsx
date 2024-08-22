@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 
 const CardDetails = () => {
   const [cardDetails, setCardDetails] = useState(null);
@@ -33,6 +34,9 @@ const CardDetails = () => {
 
   return (
     <div className="min-h-screen mt-12 p-4 lg:p-8">
+       <Helmet>
+        <title>HomeNest | Card/Details</title>
+      </Helmet>
       <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between">
         <div className="bg-base-200 w-full lg:w-[48%] flex items-center justify-center rounded-xl overflow-hidden">
           <img
