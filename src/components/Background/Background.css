@@ -1,0 +1,37 @@
+.backgroundd {
+    width: 100%;
+    height: 700px; /* Default height for larger screens */
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .backgroundd {
+        height: 600px;
+    }
+}
+
+/* Large mobile devices */
+@media (max-width: 768px) {
+    .backgroundd {
+        height: 500px;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .backgroundd {
+        height: 400px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+    .backgroundd {
+        height: 300px;
+    }
+}

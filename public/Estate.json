@@ -1,0 +1,80 @@
+[
+    {
+        "id": "1",
+        "estate_title": "Sunnyville Apartments",
+        "segment_name": "Residential",
+        "description": "A beautiful apartment with ample natural light and modern amenities.",
+        "price": "$250,000",
+        "status": "sale",
+        "area": "1500 sq ft",
+        "location": "Los Angeles, CA",
+        "facilities": ["Living Room", "Swimming Pool", "Kitchen", "Gym", "Parking"],
+        "image": "https://i.ibb.co/C7T0DH8/pexels-heyho-5998138.jpg",
+        "view_property_button": "View Property"
+    },
+    {
+        "id": "2",
+        "estate_title": "Riverview Condos",
+        "segment_name": "Residential",
+        "description": "Luxury condos with breathtaking river views and top-notch facilities.",
+        "price": "$450,000",
+        "status": "sale",
+        "area": "2000 sq ft",
+        "location": "Miami, FL",
+        "facilities": ["Living Room", "Swimming Pool", "Kitchen", "Balcony", "Security"],
+        "image": "https://i.ibb.co/gZy7bP8/pexels-d-c-dao-447174024-15456205.jpg",
+        "view_property_button": "View Property"
+    },
+    {
+        "id": "3",
+        "estate_title": "Lakeside Villas",
+        "segment_name": "Residential",
+        "description": "Exclusive villas located near the lake, offering serene surroundings.",
+        "price": "$650,000",
+        "status": "sale",
+        "area": "3000 sq ft",
+        "location": "Orlando, FL",
+        "facilities": ["Living Room", "Swimming Pool", "Kitchen", "Garden", "Garage"],
+        "image": "https://i.ibb.co/2Z02ww5/pexels-medhat-ayad-122846-447592.jpg",
+        "view_property_button": "View Property"
+    },
+    {
+        "id": "4",
+        "estate_title": "Downtown Loft",
+        "segment_name": "Residential",
+        "description": "A chic loft in the heart of downtown with easy access to all amenities.",
+        "price": "$350,000",
+        "status": "rent",
+        "area": "1800 sq ft",
+        "location": "New York, NY",
+        "facilities": ["Living Room", "Kitchen", "Rooftop Access", "Gym", "Security"],
+        "image": "https://i.ibb.co/WstB1Mn/pexels-charlotte-may-5825576.jpg",
+        "view_property_button": "View Property"
+    },
+    {
+        "id": "5",
+        "estate_title": "Seaside Cottage",
+        "segment_name": "Residential",
+        "description": "Cozy cottage with ocean views and a private beach.",
+        "price": "$2,500/month",
+        "status": "rent",
+        "area": "1200 sq ft",
+        "location": "Malibu, CA",
+        "facilities": ["Living Room", "Kitchen", "Beach Access", "Parking", "Fireplace"],
+        "image": "https://i.ibb.co/7Swzx9B/pexels-heyho-6492401.jpg",
+        "view_property_button": "View Property"
+    },
+    {
+        "id": "6",
+        "estate_title": "Mountain Retreat",
+        "segment_name": "Residential",
+        "description": "A secluded mountain retreat offering peace and privacy.",
+        "price": "$550,000",
+        "status": "sale",
+        "area": "2500 sq ft",
+        "location": "Aspen, CO",
+        "facilities": ["Living Room", "Swimming Pool", "Kitchen", "Fireplace", "Garage"],
+        "image": "https://i.ibb.co/9ZqmJ1y/pexels-maksgelatin-4352247.jpg",
+        "view_property_button": "View Property"
+    }
+]

@@ -1,0 +1,34 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    z-index: 1000;
+    color: black;
+    background-color: transparent; /* No background color */
+    backdrop-filter: none; /* No blur effect */
+    background-color: rgba(128, 128, 128, 0.5); /* Light gray with transparency */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: backdrop-filter 0.3s, background-color 0.3s; /* Smooth transition when scrolled */
+}
+
+.trans{
+    color: white;
+    z-index: 10;
+    background-color: transparent; 
+    backdrop-filter: none; 
+    transition: backdrop-filter 0.3s, background-color 0.3s;
+    backdrop-filter: blur(5px); 
+}
+
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white when scrolled */
+    backdrop-filter: blur(10px); /* Apply blur for glass effect when scrolled */
+    
+}
+
+
+
