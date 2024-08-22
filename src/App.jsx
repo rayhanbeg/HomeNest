@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Background from "./components/Background/Background";
 import Hero from "./components/Hero/Hero";
 
+
 const App = () => {
   
   let heroData = [
@@ -32,6 +33,7 @@ useEffect(() => {
         playStatus={playStatus}
         setPlayStatus={setPlayStatus}
       />
+
     </div>
   );
 };

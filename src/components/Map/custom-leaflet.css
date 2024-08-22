@@ -1,0 +1,30 @@
+/* map.css */
+
+.map-container {
+    height: 400px; /* Set a fixed height */
+    width: 100%; /* Full width of parent container */
+    max-width: 100%; /* Max width of 100% for responsiveness */
+    margin: 0 auto; /* Center the map horizontally */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow to maintain rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+  .leaflet-container {
+    height: 100%; /* Ensure map fills its container */
+    width: 100%; /* Ensure map fills its container */
+  }
+  
+  /* Make sure map is responsive on smaller devices */
+  @media (max-width: 768px) {
+    .map-container {
+      height: 300px; /* Adjust height for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .map-container {
+      height: 250px; /* Further adjust height for very small screens */
+    }
+  }
+  

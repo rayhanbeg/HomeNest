@@ -5,9 +5,6 @@ import 'animate.css';
 
 const Hero = ({ heroData, setHeroCount, heroCount, setPlayStatus, playStatus }) => {
    
-
-   
-
     return (
 <div className=''>
 <div className='mr-10 mt-44 ml-10 lg:mr-28 lg:mt-64 lg:ml-20'>

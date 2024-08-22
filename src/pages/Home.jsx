@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet";
 import App from "../App";
 import Background from "../components/Background/Background";
 import EstateSection from "../components/EstateSection/EstateSection";
@@ -7,13 +6,12 @@ import EstateSection from "../components/EstateSection/EstateSection";
 const HomePage = () => {
     return (
         <div>
-             <Helmet>
-        <title>HomeNest | Home</title>
-      </Helmet>
+        
             <Background/>
             <App/>
             <EstateSection/>
-        </div>
+            
+                        </div>
     );
 };
 

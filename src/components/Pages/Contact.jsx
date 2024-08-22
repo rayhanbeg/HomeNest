@@ -1,7 +1,9 @@
 import { Helmet } from "react-helmet";
+import MapComponent from "../Map/Map";
 
 const Contact = () => {
   return (
+    <>
     <section className="py-6 dark:text-gray-900 mt-36">
       <Helmet>
         <title>HomeNest | Contact</title>
@@ -87,6 +89,8 @@ const Contact = () => {
         </form>
       </div>
     </section>
+    <MapComponent/>
+    </>
   );
 };
 
