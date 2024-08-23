@@ -22,7 +22,11 @@ const CardDetails = () => {
   }, [id]);
 
   if (!cardDetails) {
-    return <div className="flex justify-center items-center h-screen">Loading...</div>;
+    return (
+      <div className="flex justify-center items-center h-screen">
+        Loading...
+      </div>
+    );
   }
 
   const {
@@ -60,30 +64,42 @@ const CardDetails = () => {
         <div className="p-6 lg:p-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <h2 className="text-lg font-semibold text-gray-700 mb-2">Location:</h2>
+              <h2 className="text-lg font-semibold text-gray-700 mb-2">
+                Location:
+              </h2>
               <p className="text-gray-600">{location}</p>
             </div>
             <div>
-              <h2 className="text-lg font-semibold text-gray-700 mb-2">Price:</h2>
+              <h2 className="text-lg font-semibold text-gray-700 mb-2">
+                Price:
+              </h2>
               <p className="text-gray-600">{price}</p>
             </div>
             <div>
-              <h2 className="text-lg font-semibold text-gray-700 mb-2">Area:</h2>
+              <h2 className="text-lg font-semibold text-gray-700 mb-2">
+                Area:
+              </h2>
               <p className="text-gray-600">{area}</p>
             </div>
             <div>
-              <h2 className="text-lg font-semibold text-gray-700 mb-2">Status:</h2>
+              <h2 className="text-lg font-semibold text-gray-700 mb-2">
+                Status:
+              </h2>
               <p className="text-gray-600">{status}</p>
             </div>
           </div>
 
           <div className="mt-6">
-            <h2 className="text-lg font-semibold text-gray-700 mb-2">Description:</h2>
+            <h2 className="text-lg font-semibold text-gray-700 mb-2">
+              Description:
+            </h2>
             <p className="text-gray-600 mb-6">{description}</p>
           </div>
 
           <div className="mt-6">
-            <h2 className="text-lg font-semibold text-gray-700 mb-2">Facilities:</h2>
+            <h2 className="text-lg font-semibold text-gray-700 mb-2">
+              Facilities:
+            </h2>
             <div className="flex flex-wrap gap-2">
               {facilities.map((facility, index) => (
                 <span
@@ -97,14 +113,14 @@ const CardDetails = () => {
           </div>
 
           <div className="mt-6 flex justify-center">
-          <button
-  type="button"
-  className="w-full p-3 mt-4 font-semibold text-white bg-gray-700 rounded-md shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 transition duration-150 ease-in-out"
->
-  <Link to='/contact' className="block w-full h-full">
-    View Property
-  </Link>
-</button>
+            <button
+              type="button"
+              className="w-full p-3 mt-4 font-semibold text-white bg-gray-700 rounded-md shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 transition duration-150 ease-in-out"
+            >
+              <Link to="/contact" className="block w-full h-full">
+                View Property
+              </Link>
+            </button>
           </div>
         </div>
       </div>

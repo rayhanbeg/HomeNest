@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Banner = ({ estate }) => {
   return (
@@ -11,9 +11,13 @@ const Banner = ({ estate }) => {
 
       {/* Banner content */}
       <div className="relative text-center text-white px-4">
-        <h1 className="text-lg md:text-3xl lg:text-5xl font-bold mb-2">{estate?.estate_title}</h1>
+        <h1 className="text-lg md:text-3xl lg:text-5xl font-bold mb-2">
+          {estate?.estate_title}
+        </h1>
         <p className="text-lg md:text-xl lg:text-2xl">{estate?.location}</p>
-        <p className="text-lg md:text-2xl font-semibold text-green-300">{estate?.price}</p>
+        <p className="text-lg md:text-2xl font-semibold text-green-300">
+          {estate?.price}
+        </p>
       </div>
     </div>
   );
