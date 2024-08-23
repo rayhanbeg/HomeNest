@@ -118,7 +118,7 @@ const CardDetails = () => {
               className="w-full p-3 mt-4 font-semibold text-white bg-gray-700 rounded-md shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 transition duration-150 ease-in-out"
             >
               <Link to="/contact" className="block w-full h-full">
-                View Property
+                Contact Us
               </Link>
             </button>
           </div>

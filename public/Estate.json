@@ -70,5 +70,53 @@
         "location": "New York, NY",
         "facilities": ["Living Room", "Kitchen", "Rooftop Access", "Gym", "Security"],
         "image": "https://i.ibb.co/WstB1Mn/pexels-charlotte-may-5825576.jpg"
+    },
+    {
+        "id": "1007",
+        "estate_title": "Urban Oasis",
+        "segment_name": "Residential",
+        "description": "Modern urban home with a spacious rooftop garden and city views.",
+        "price": "$500,000",
+        "status": "sale",
+        "area": "2200 sq ft",
+        "location": "Chicago, IL",
+        "facilities": ["Living Room", "Rooftop Garden", "Kitchen", "Gym", "Parking"],
+        "image": "https://i.ibb.co/yWHfGH8/pexels-orlovamaria-4946903.jpg"
+    },
+    {
+        "id": "1008",
+        "estate_title": "Countryside Manor",
+        "segment_name": "Residential",
+        "description": "Spacious manor with beautiful countryside views and ample outdoor space.",
+        "price": "$1,200,000",
+        "status": "sale",
+        "area": "4000 sq ft",
+        "location": "Austin, TX",
+        "facilities": ["Living Room", "Swimming Pool", "Kitchen", "Garden", "Guest House"],
+        "image": "https://i.ibb.co/RN1PR7d/pexels-heyho-6238614.jpg"
+    },
+    {
+        "id": "1009",
+        "estate_title": "City View Penthouse",
+        "segment_name": "Residential",
+        "description": "Luxurious penthouse with panoramic city views and high-end finishes.",
+        "price": "$850,000",
+        "status": "rent",
+        "area": "2000 sq ft",
+        "location": "San Francisco, CA",
+        "facilities": ["Living Room", "Rooftop Deck", "Kitchen", "Security", "Parking"],
+        "image": "https://i.ibb.co/N2hcpFj/pexels-marta-wave-5875843.jpg"
+    },
+    {
+        "id": "1010",
+        "estate_title": "Beachside Retreat",
+        "segment_name": "Residential",
+        "description": "Elegant beachside home with direct access to the beach and stunning ocean views.",
+        "price": "$3,000,000",
+        "status": "sale",
+        "area": "3500 sq ft",
+        "location": "Santa Monica, CA",
+        "facilities": ["Living Room", "Beach Access", "Kitchen", "Pool", "Garage"],
+        "image": "https://i.ibb.co/QpVWzFJ/pexels-heyho-7533766.jpg"
     }
 ]
