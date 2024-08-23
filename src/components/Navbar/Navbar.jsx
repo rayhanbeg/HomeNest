@@ -68,7 +68,7 @@ const Navbar = () => {
                 <NavLink to='/' className={({isActive}) => isActive ? "active rounded-link" : "rounded-link"}>Home</NavLink>
               </li>
           <li>
-                <NavLink to='/contact' className={({isActive}) => isActive ? "active rounded-link" : "rounded-link"}>Contact</NavLink>
+                <NavLink to='/contact' className={({isActive}) => isActive ? "active rounded-link" : "rounded-link"}>Contact Us</NavLink>
               </li>
               <li>
                 <NavLink to='/update-profile' className={({isActive}) => isActive ? "active rounded-link" : "rounded-link"}>Update profile</NavLink>

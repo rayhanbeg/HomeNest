@@ -4,19 +4,19 @@ import 'leaflet/dist/leaflet.css'; // Ensure Leaflet CSS is imported
 import './custom-leaflet.css'
 
 // Replace with your actual location coordinates
-const myLocation = [23.8103, 90.4125]; // Example coordinates for Dhaka, Bangladesh
+const homeNest = [23.8103, 90.4125]; // Example coordinates for Dhaka, Bangladesh
 
 const MapComponent = () => {
   return (
     <div className="map-container">
-      <MapContainer center={myLocation} zoom={13} scrollWheelZoom={false} style={{ height: '100%', width: '100%' }}>
+      <MapContainer center={homeNest} zoom={13} scrollWheelZoom={false} style={{ height: '100%', width: '100%' }}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={myLocation}>
+        <Marker position={homeNest}>
           <Popup>
-            Your Location: Dhaka, Bangladesh
+            HomeNest: Dhaka, Bangladesh
           </Popup>
         </Marker>
       </MapContainer>

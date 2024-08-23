@@ -1,24 +1,28 @@
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
+import Banner from "./Banner";
+import { useParams } from "react-router-dom";
 
 const CardDetails = () => {
   const [cardDetails, setCardDetails] = useState(null);
+  const { id } = useParams();
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch("/Estate.json");
         const data = await response.json();
-        setCardDetails(data[0]); // Display the first card's details as an example
+        const card = data.find((card) => card.id === id);
+        setCardDetails(card);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     };
     fetchData();
-  }, []);
+  }, [id]);
 
   if (!cardDetails) {
-    return <div>Loading...</div>;
+    return <div className="flex justify-center items-center h-screen">Loading...</div>;
   }
 
   const {
@@ -33,47 +37,71 @@ const CardDetails = () => {
   } = cardDetails;
 
   return (
-    <div className="min-h-screen mt-12 p-4 lg:p-8">
-       <Helmet>
-        <title>HomeNest | Card/Details</title>
+    <div className="min-h-screen bg-gray-100 p-6 lg:p-12">
+      <Helmet>
+        <title>HomeNest | {estate_title}</title>
       </Helmet>
-      <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between">
-        <div className="bg-base-200 w-full lg:w-[48%] flex items-center justify-center rounded-xl overflow-hidden">
+      <Banner estate={cardDetails} />
+
+      <div className="max-w-7xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+        <div className="relative">
           <img
             src={image}
             alt={estate_title}
-            className="w-full h-auto max-h-[300px] md:max-h-[400px] lg:max-h-[512px] object-cover rounded-xl"
+            className="w-full h-64 sm:h-80 lg:h-96 object-cover"
           />
-        </div>
-        <div className="w-full lg:w-[48%] mt-8 lg:mt-0 space-y-6 lg:space-y-8">
-          <h1 className="text-3xl lg:text-4xl font-bold">{estate_title}</h1>
-          <h5 className="text-lg lg:text-xl font-semibold">Location: {location}</h5>
-          <hr />
-          <h2 className="text-lg lg:text-xl font-semibold">Price: {price}</h2>
-          <hr />
-          <h2 className="text-lg lg:text-xl font-semibold">Area: {area}</h2>
-          <hr />
-          <h2 className="text-lg lg:text-xl font-semibold">Status: {status}</h2>
-          <hr />
-          <p className="text-base lg:text-lg">
-            <span className="font-bold">Description: </span>
-            {description}
-          </p>
-          <div className="flex flex-wrap gap-2">
-            <h1 className="text-lg lg:text-xl font-bold">Facilities:</h1>
-            {facilities.map((facility, index) => (
-              <button
-                key={index}
-                className="px-3 py-1 text-sm bg-[#f4fcf3] rounded-full text-[#23be0a]">
-                {facility}
-              </button>
-            ))}
+          <div className="absolute inset-0 flex items-end p-6 bg-gradient-to-t from-gray-900 via-transparent to-transparent">
+            <h1 className="text-3xl lg:text-4xl font-bold text-white bg-gray-900 bg-opacity-50 p-4 rounded-md">
+              {estate_title}
+            </h1>
           </div>
-          <div className="flex gap-4 mt-4">
+        </div>
+
+        <div className="p-6 lg:p-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <h2 className="text-lg font-semibold text-gray-700 mb-2">Location:</h2>
+              <p className="text-gray-600">{location}</p>
+            </div>
+            <div>
+              <h2 className="text-lg font-semibold text-gray-700 mb-2">Price:</h2>
+              <p className="text-gray-600">{price}</p>
+            </div>
+            <div>
+              <h2 className="text-lg font-semibold text-gray-700 mb-2">Area:</h2>
+              <p className="text-gray-600">{area}</p>
+            </div>
+            <div>
+              <h2 className="text-lg font-semibold text-gray-700 mb-2">Status:</h2>
+              <p className="text-gray-600">{status}</p>
+            </div>
+          </div>
+
+          <div className="mt-6">
+            <h2 className="text-lg font-semibold text-gray-700 mb-2">Description:</h2>
+            <p className="text-gray-600 mb-6">{description}</p>
+          </div>
+
+          <div className="mt-6">
+            <h2 className="text-lg font-semibold text-gray-700 mb-2">Facilities:</h2>
+            <div className="flex flex-wrap gap-2">
+              {facilities.map((facility, index) => (
+                <span
+                  key={index}
+                  className="px-4 py-2 text-sm bg-gray-200 rounded-full text-gray-700"
+                >
+                  {facility}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-6 flex justify-center">
             <button
-              onClick={() => alert("View Property clicked")}
-              className="px-6 py-2 bg-violet-500 text-white font-semibold rounded-md hover:bg-violet-600">
-              View Property
+              type="button"
+              className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-md shadow-md hover:bg-blue-700 transition duration-300"
+            >
+              Contact Us
             </button>
           </div>
         </div>

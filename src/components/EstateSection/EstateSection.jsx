@@ -56,13 +56,14 @@ const EstateSection = () => {
               </div>
             </div>
             <button
-              type="button"
-              className="w-full p-2 mt-4 font-semibold tracking-wide rounded-md bg-violet-400 text-gray-900 text-xs"
-            >
-             <Link to={`/card/${card.id}`}>
-             {card.view_property_button}
-             </Link>
-            </button>
+  type="button"
+  className="w-full p-3 mt-4 font-semibold text-white bg-gray-700 rounded-md shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 transition duration-150 ease-in-out"
+>
+  <Link to={`/card/${card?.id}`} className="block w-full h-full">
+    View Property
+  </Link>
+</button>
+
           </div>
         </div>
       ))}

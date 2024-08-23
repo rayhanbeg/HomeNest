@@ -6,7 +6,7 @@ const Contact = () => {
     <>
     <section className="py-6 dark:text-gray-900 mt-36">
       <Helmet>
-        <title>HomeNest | Contact</title>
+        <title>HomeNest | Contact Us</title>
       </Helmet>
       <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
         <div className="py-6 md:py-0 md:px-6">
