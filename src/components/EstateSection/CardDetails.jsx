@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import Banner from "./Banner";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const CardDetails = () => {
   const [cardDetails, setCardDetails] = useState(null);
@@ -51,7 +51,7 @@ const CardDetails = () => {
             className="w-full h-64 sm:h-80 lg:h-96 object-cover"
           />
           <div className="absolute inset-0 flex items-end p-6 bg-gradient-to-t from-gray-900 via-transparent to-transparent">
-            <h1 className="text-3xl lg:text-4xl font-bold text-white bg-gray-900 bg-opacity-50 p-4 rounded-md">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white bg-gray-900 bg-opacity-50 p-4 rounded-md">
               {estate_title}
             </h1>
           </div>
@@ -97,12 +97,14 @@ const CardDetails = () => {
           </div>
 
           <div className="mt-6 flex justify-center">
-            <button
-              type="button"
-              className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-md shadow-md hover:bg-blue-700 transition duration-300"
-            >
-              Contact Us
-            </button>
+          <button
+  type="button"
+  className="w-full p-3 mt-4 font-semibold text-white bg-gray-700 rounded-md shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 transition duration-150 ease-in-out"
+>
+  <Link to='/contact' className="block w-full h-full">
+    View Property
+  </Link>
+</button>
           </div>
         </div>
       </div>
