@@ -49,7 +49,7 @@ const Navbar = () => {
             </button>
             <ul
               tabIndex={0}
-              className="trans menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 p-2 shadow bg-transparent transition-colors duration-300 backdrop-blur-sm transition-backdrop-filter"
+              className="trans menu menu-sm dropdown-content rounded-box z-50 mt-3 w-52 p-2 shadow bg-white duration-300 backdrop-blur-sm transition-backdrop-filter"
             >
               <li>
                 <NavLink to='/' className={({isActive}) => isActive ? "active rounded-link" : "rounded-link"}>Home</NavLink>
@@ -91,7 +91,7 @@ const Navbar = () => {
               </button>
               <ul
                 tabIndex={0}
-                className="mt-3 p-2 shadow menu menu-compact dropdown-content rounded-box w-52 bg-transparent transition-colors duration-300 backdrop-blur-sm transition-backdrop-filter "
+                className="mt-3 p-2 shadow menu menu-compact dropdown-content rounded-box w-52 bg-white duration-300 backdrop-blur-sm transition-backdrop-filter "
               >
                 <li className="justify-between">
                   <span>{user.displayName}</span>

@@ -29,7 +29,7 @@ const Profile = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+    <div className="min-h-[calc(100vh-100px)] flex items-center justify-center">
       <Helmet>
         <title>HomeNest | Profile</title>
       </Helmet>

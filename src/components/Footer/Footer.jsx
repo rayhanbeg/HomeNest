@@ -1,7 +1,7 @@
 
 const Footer = () => {
     return (
-        <footer className="footer footer-center bg-base-300 text-base-content p-4 mt-52">
+        <footer className="footer footer-center bg-base-300 text-base-content p-4 mt-8 lg:mt-12">
   <aside>
     <p>Copyright © {new Date().getFullYear()} - All right reserved by HomeNest Ltd</p>
   </aside>

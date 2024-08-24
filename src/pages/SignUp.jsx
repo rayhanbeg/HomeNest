@@ -59,7 +59,7 @@ const SignUp = () => {
   if (user || loading) return <LoadingSpinner/>;
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4 space-y-6 mt-12">
+    <div className="flex flex-col items-center justify-center min-h-[calc(100vh-100px)] p-4 space-y-6 mt-12">
       <div className="max-w-md w-full bg-white rounded-lg p-8">
         <div className="flex justify-center items-center mb-6 ">
           <h1 className="text-3xl font-bold text-gray-700">HomeNest</h1>
