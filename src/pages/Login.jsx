@@ -4,6 +4,7 @@ import { useContext, useEffect } from "react";
 import { AuthContext } from "../provider/AuthProvider";
 import { FaGoogle } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
+import LoadingSpinner from "../Shared/LoadingSpinner";
 
 const Login = () => {
   const { signIn, signInWithGoogle, signInWithGitHub, user, loading } = useContext(AuthContext);
@@ -57,7 +58,7 @@ const Login = () => {
     }
   };
 
-  if (user || loading) return null;
+  if (user || loading) return <LoadingSpinner/>;
 
   return (
     <div className='flex items-center justify-center min-h-screen p-4 mt-12'>

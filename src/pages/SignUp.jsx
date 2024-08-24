@@ -3,9 +3,10 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import { AuthContext } from "../provider/AuthProvider";
 import { FaGoogle } from "react-icons/fa";
+import LoadingSpinner from "../Shared/LoadingSpinner";
 
 const SignUp = () => {
-  const { user, setUser, createUser, signInWithGoogle, updateUserProfile } =
+  const { user, loading, setUser, createUser, signInWithGoogle, updateUserProfile } =
     useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
@@ -54,6 +55,8 @@ const SignUp = () => {
       toast.error("Error: " + error.message.slice(22, -2));
     }
   };
+
+  if (user || loading) return <LoadingSpinner/>;
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4 space-y-6 mt-12">

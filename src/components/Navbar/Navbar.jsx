@@ -2,9 +2,10 @@ import './Navbar.css'
 import { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from '../../provider/AuthProvider';
+import { ImSpinner8 } from "react-icons/im";
 
 const Navbar = () => {
-  const { user, logOut } = useContext(AuthContext);
+  const { user, logOut, loading } = useContext(AuthContext);
   const [scrolled, setScrolled] = useState(false);
 
   
@@ -24,6 +25,9 @@ const Navbar = () => {
           window.removeEventListener('scroll', handleScroll);
       };
   }, []);
+
+
+ 
 
 
   return (
@@ -76,7 +80,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          {user ? (
+          { loading ? (
+          <p className='animate-spin'><ImSpinner8/></p>
+        ) : user ? (
             <div className="dropdown dropdown-end">
               <button tabIndex={0} className="btn btn-ghost btn-circle avatar">
                 <div className="w-10 rounded-full">

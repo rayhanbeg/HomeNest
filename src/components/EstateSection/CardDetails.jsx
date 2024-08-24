@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import Banner from "./Banner";
 import { Link, useParams } from "react-router-dom";
+import LoadingSpinner from "../../Shared/LoadingSpinner";
 
 const CardDetails = () => {
   const [cardDetails, setCardDetails] = useState(null);
@@ -21,13 +22,7 @@ const CardDetails = () => {
     fetchData();
   }, [id]);
 
-  if (!cardDetails) {
-    return (
-      <div className="flex justify-center items-center h-screen">
-        Loading...
-      </div>
-    );
-  }
+  if (!cardDetails) return <LoadingSpinner/>
 
   const {
     image,

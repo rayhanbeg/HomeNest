@@ -13,7 +13,7 @@ const Profile = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [message, setMessage] = useState("");
 
-  if (loading) return <LoadingSpinner />;
+  if (loading) return <LoadingSpinner smallHeight/>;
 
   const handleUpdateProfile = async () => {
     setIsUpdating(true);
@@ -39,7 +39,7 @@ const Profile = () => {
             <img
               alt="profile"
               src={user?.photoURL}
-              className="rounded-full h-32 w-32 object-cover border-4 border-white shadow-md mb-4"
+              className="rounded-full  h-32 w-32 object-cover border-4 border-white shadow-md mb-4"
             />
             {isEditing ? (
               <>

@@ -4,7 +4,7 @@ import {  ClipLoader } from 'react-spinners'
 const LoadingSpinner = ({ smallHeight }) => {
   return (
     <div
-      className={` ${smallHeight ? 'h-[250px]' : 'h-[70vh]'}
+      className={` ${smallHeight ? 'h-[200px]' : 'h-[70vh]'}
       flex 
       flex-col 
       justify-center 
